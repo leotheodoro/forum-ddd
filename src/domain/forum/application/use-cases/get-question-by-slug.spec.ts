@@ -19,7 +19,6 @@ describe('Get Question By Slug Use Case', () => {
 
     inMemoryQuestionsRepository.create(newQuestion)
 
-    console.log(newQuestion)
     const { question } = await sut.execute({
       slug: 'example-question',
     })
