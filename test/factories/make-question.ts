@@ -14,7 +14,7 @@ export function makeQuestion(
     {
       title: faker.lorem.sentence(),
       slug: Slug.create('example-question'),
-      authorId: new UniqueEntityID('1'),
+      authorId: new UniqueEntityID('author-1'),
       content: faker.lorem.text(),
       ...override,
     },
