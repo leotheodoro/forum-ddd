@@ -5,7 +5,7 @@ export class InMemoryAnswersRepository implements AnswersRepository {
   public items: Answer[] = []
 
   async findById(id: string) {
-    const answer = this.items.find((item) => item.id === id)
+    const answer = this.items.find((item) => item.id.toString() === id)
 
     if (!answer) {
       return null
